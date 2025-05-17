@@ -6,3 +6,11 @@
   color: #000000;
 }
 /* testing */
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding-top: 50px;
+}
