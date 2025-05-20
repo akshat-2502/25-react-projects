@@ -1,8 +1,8 @@
+import { useState } from "react";
 
+export default function ImageSlider({ url, limit }) {
+  const [images, setImages] = useState([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-
-export default const ImageSlider({url, limit}) {
-    return (
-        <div className="container"></div>
-    );
+  return <div className="container"></div>;
 }
