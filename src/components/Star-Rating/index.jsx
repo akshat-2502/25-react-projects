@@ -20,7 +20,9 @@ export default function StarRating({ noOfStar = 5 }) {
 
   return (
     <div>
-      <h1 className="text-4xl mt-20 font-bold">Star Rating Problem</h1>
+      <h1 className="text-4xl mt-20 font-bold flex justify-center ">
+        Star Rating Problem
+      </h1>
       <div className="star-rating">
         {[...Array(noOfStar)].map((_, index) => {
           index += 1;

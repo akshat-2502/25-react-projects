@@ -1,0 +1,39 @@
+.load-more-container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.product {
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+}
+
+.button-container button {
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}

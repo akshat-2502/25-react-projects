@@ -63,6 +63,12 @@
   margin-top: 300px;
 }
 
+.main-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heading {
   font-size: 60px;
   margin-bottom: 20px;

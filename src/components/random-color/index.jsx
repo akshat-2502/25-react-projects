@@ -32,47 +32,56 @@ export default function RandomColor() {
   }, [typeOfColor]);
 
   return (
-    <div
-      style={{
-        width: "100vw",
-        height: "100vh",
-        background: color,
-        padding: "0px",
-        margin: "0px",
-      }}
-    >
-      <button
-        onClick={() => setTypeOfColor("hex")}
-        className="text-black px-4 py-2 m-2 cursor-pointer bg-gray-300"
-      >
-        Create HEX Color
-      </button>
-      <button
-        onClick={() => setTypeOfColor("rgb")}
-        className="text-black px-4 py-2 m-2 cursor-pointer bg-gray-300"
-      >
-        Create RGB Color
-      </button>
-      <button
-        onClick={typeOfColor === "hex" ? handleHexColor : handleRgbColor}
-        className="text-black px-4 py-2 m-2 cursor-pointer bg-gray-300"
-      >
-        Generate Random Color
-      </button>
+    <div>
+      <h1>
+        <h1 className="text-4xl flex justify-center mb-10">
+          Randon Background Color
+        </h1>
+      </h1>
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#fff",
-          fontSize: "60px",
-          marginTop: "50px",
-          flexDirection: "column",
-          gap: "20px",
+          width: "100vw",
+          height: "100vh",
+          background: color,
+          padding: "0px",
+          margin: "0px",
         }}
       >
-        <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
-        <h1>{color}</h1>
+        <div className="flex justify-center">
+          <button
+            onClick={() => setTypeOfColor("hex")}
+            className="text-black px-4 py-2 m-2 cursor-pointer bg-gray-300"
+          >
+            Create HEX Color
+          </button>
+          <button
+            onClick={() => setTypeOfColor("rgb")}
+            className="text-black px-4 py-2 m-2 cursor-pointer bg-gray-300"
+          >
+            Create RGB Color
+          </button>
+          <button
+            onClick={typeOfColor === "hex" ? handleHexColor : handleRgbColor}
+            className="text-black px-4 py-2 m-2 cursor-pointer bg-gray-300"
+          >
+            Generate Random Color
+          </button>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#fff",
+            fontSize: "60px",
+            marginTop: "50px",
+            flexDirection: "column",
+            gap: "20px",
+          }}
+        >
+          <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
+          <h1>{color}</h1>
+        </div>
       </div>
     </div>
   );
