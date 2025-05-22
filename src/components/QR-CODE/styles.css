@@ -1,0 +1,28 @@
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.qr-code-container h1 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.qr-code-container input {
+  border: 1px solid black;
+  padding: 5px 10px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+
+.qr-code-container button {
+  background: blue;
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
