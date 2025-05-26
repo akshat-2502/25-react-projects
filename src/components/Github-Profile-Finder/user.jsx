@@ -6,7 +6,9 @@ const User = ({ user }) => {
         <img src={avatar_url} alt={login} />
       </div>
       <div>
-        <a href={`https://www.github.com/${login}`}>{name || login}</a>
+        <a target="_blank" href={`https://www.github.com/${login}`}>
+          {name || login}
+        </a>
       </div>
     </div>
   );

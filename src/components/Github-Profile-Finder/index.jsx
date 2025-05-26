@@ -5,7 +5,9 @@ const GithubProfileFinder = () => {
   const [username, setUsername] = useState("akshat-2502");
   const [userData, setUserData] = useState(null);
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    fetchGithubUserData();
+  };
 
   const fetchGithubUserData = async () => {
     const response = await fetch(`https://api.github.com/users/${username}`);
@@ -13,6 +15,7 @@ const GithubProfileFinder = () => {
 
     if (data) {
       setUserData(data);
+      setUsername("");
     }
   };
 
