@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const GithubProfileFinder = () => {
+  const [username, setUsername] = useState("akshat-2502");
   return (
     <div>
       <h1>Github Profile Finder</h1>
@@ -8,8 +11,10 @@ const GithubProfileFinder = () => {
             type="text"
             name="search-by-username"
             placeholder="Search GitHub Username..."
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
-          <button>Search</button>
+          <button onClick={handleSubmit}>Search</button>
         </div>
       </div>
     </div>
