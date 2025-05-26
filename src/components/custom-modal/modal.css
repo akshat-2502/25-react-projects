@@ -27,6 +27,8 @@
   padding: 0;
   border: 1px solid black;
   width: 80%;
+  animation-name: animateModal;
+  animation-duration: 1s;
 }
 
 .header {
@@ -50,4 +52,16 @@
   color: white;
   text-align: center;
   font-size: 30px;
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
