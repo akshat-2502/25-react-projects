@@ -26,7 +26,7 @@ const GithubProfileFinder = () => {
 
   return (
     <div>
-      <h1>Github Profile Finder</h1>
+      <h1 className="hone">Github Profile Finder</h1>
       <div className="github-profile-container">
         <div className="input-wrapper">
           <input

@@ -32,4 +32,42 @@
 .user {
   padding: 15px;
   border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  height: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.name-container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.name-container p {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hone {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: bold;
 }

@@ -14,8 +14,12 @@ const User = ({ user }) => {
       <div>
         <img className="avatar" src={avatar_url} alt={login} />
       </div>
-      <div>
-        <a target="_blank" href={`https://www.github.com/${login}`}>
+      <div className="name-container">
+        <a
+          className="font-bold text-xl"
+          target="_blank"
+          href={`https://www.github.com/${login}`}
+        >
           {name || login}
         </a>
         <p>
@@ -25,17 +29,19 @@ const User = ({ user }) => {
           })} ${createdDate.getFullYear()}`}
         </p>
       </div>
-      <div>
-        <p>Public Respositories : </p>
-        <p>{public_repos}</p>
-      </div>
-      <div>
-        <p>Followers : </p>
-        <p>{followers}</p>
-      </div>
-      <div>
-        <p>Following : </p>
-        <p>{following}</p>
+      <div className="profile-info">
+        <div className="font-bold">
+          <p>Public Respositories </p>
+          <p>{public_repos}</p>
+        </div>
+        <div className="font-bold">
+          <p>Followers </p>
+          <p>{followers}</p>
+        </div>
+        <div className="font-bold">
+          <p>Following </p>
+          <p>{following}</p>
+        </div>
       </div>
     </div>
   );
