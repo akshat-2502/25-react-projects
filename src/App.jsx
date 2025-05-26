@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordian from "./components/Accordian";
 import ModalTest from "./components/custom-modal/modal-test";
+import GithubProfileFinder from "./components/Github-Profile-Finder";
 import ImageSlider from "./components/Image-Slider";
 import LightDarkMode from "./components/Light-Dark-mode";
 import LoadMoreButton from "./components/Load-More-Button";
@@ -47,6 +48,9 @@ function App() {
 
       {/* Custom Modal Component */}
       <ModalTest />
+
+      {/* GitHub Profile Finder */}
+      <GithubProfileFinder />
     </div>
   );
 }

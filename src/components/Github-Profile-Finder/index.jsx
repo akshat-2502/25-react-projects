@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const GithubProfileFinder = () => {
   const [username, setUsername] = useState("akshat-2502");
+  const handleSubmit = () => {};
   return (
     <div>
       <h1>Github Profile Finder</h1>
