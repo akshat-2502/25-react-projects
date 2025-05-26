@@ -19,12 +19,15 @@ const User = ({ user }) => {
           {name || login}
         </a>
         <p>
-          User Joined ON :-{" "}
+          User Joined On :-{" "}
           {`${createdDate.getDate()} ${createdDate.toLocaleString("en-us", {
             month: "short",
           })} ${createdDate.getFullYear()}`}
         </p>
       </div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   );
 };
