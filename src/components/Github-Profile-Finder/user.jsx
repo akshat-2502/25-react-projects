@@ -25,9 +25,18 @@ const User = ({ user }) => {
           })} ${createdDate.getFullYear()}`}
         </p>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>
+        <p>Public Respositories : </p>
+        <p>{public_repos}</p>
+      </div>
+      <div>
+        <p>Followers : </p>
+        <p>{followers}</p>
+      </div>
+      <div>
+        <p>Following : </p>
+        <p>{following}</p>
+      </div>
     </div>
   );
 };
