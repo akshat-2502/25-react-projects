@@ -12,7 +12,7 @@ const User = ({ user }) => {
   return (
     <div className="user">
       <div>
-        <img src={avatar_url} alt={login} />
+        <img className="avatar" src={avatar_url} alt={login} />
       </div>
       <div>
         <a target="_blank" href={`https://www.github.com/${login}`}>
