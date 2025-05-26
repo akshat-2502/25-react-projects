@@ -7,6 +7,7 @@ import QRCodeGenerator from "./components/QR-CODE";
 import RandomColor from "./components/random-color";
 import ScrollIndicator from "./components/Scroll-Indicator";
 import StarRating from "./components/Star-Rating";
+import TabTest from "./components/Tabs/tabs-test";
 import TreeView from "./components/TreeView_Menu_UI";
 import menus from "./components/TreeView_Menu_UI/data";
 
@@ -39,6 +40,9 @@ function App() {
 
       {/* Scroll Indicator */}
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+
+      {/* Custom Tab Component */}
+      <TabTest />
     </div>
   );
 }
