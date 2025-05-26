@@ -25,7 +25,14 @@ const TabTest = () => {
     console.log(currentTabIndex);
   };
 
-  return <Tabs tabsContent={tabs} onChange={handleChange} />;
+  return (
+    <div>
+      <h1 className="mt-48 flex justify-center text-5xl font-bold">
+        Random Tab Component
+      </h1>
+      <Tabs tabsContent={tabs} onChange={handleChange} />
+    </div>
+  );
 };
 
 export default TabTest;
