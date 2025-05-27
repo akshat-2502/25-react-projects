@@ -8,8 +8,10 @@ import LoadMoreButton from "./components/Load-More-Button";
 import QRCodeGenerator from "./components/QR-CODE";
 import RandomColor from "./components/random-color";
 import ScrollIndicator from "./components/Scroll-Indicator";
+import SearchAutocomplete from "./components/Search-Autocomplete";
 import StarRating from "./components/Star-Rating";
 import TabTest from "./components/Tabs/tabs-test";
+import TicTacToe from "./components/Tic-Tac-Toe";
 import TreeView from "./components/TreeView_Menu_UI";
 import menus from "./components/TreeView_Menu_UI/data";
 
@@ -51,6 +53,12 @@ function App() {
 
       {/* GitHub Profile Finder */}
       <GithubProfileFinder />
+
+      {/* Autocomplete Search Bar */}
+      <SearchAutocomplete />
+
+      {/* Tic Tac Toe */}
+      <TicTacToe />
     </div>
   );
 }
