@@ -14,6 +14,7 @@ import TabTest from "./components/Tabs/tabs-test";
 import TicTacToe from "./components/Tic-Tac-Toe";
 import TreeView from "./components/TreeView_Menu_UI";
 import menus from "./components/TreeView_Menu_UI/data";
+import UseFetchHookTest from "./components/Use-Fetch-Custom-Hooks/test";
 
 function App() {
   return (
@@ -59,6 +60,9 @@ function App() {
 
       {/* Tic Tac Toe */}
       <TicTacToe />
+
+      {/* Custom UseFetch Hook */}
+      <UseFetchHookTest />
     </div>
   );
 }
