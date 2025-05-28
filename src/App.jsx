@@ -8,6 +8,7 @@ import LoadMoreButton from "./components/Load-More-Button";
 import QRCodeGenerator from "./components/QR-CODE";
 import RandomColor from "./components/random-color";
 import ScrollIndicator from "./components/Scroll-Indicator";
+import ScrollToTopAndBottom from "./components/Scroll-to top-bottom";
 import SearchAutocomplete from "./components/Search-Autocomplete";
 import StarRating from "./components/Star-Rating";
 import TabTest from "./components/Tabs/tabs-test";
@@ -62,11 +63,14 @@ function App() {
       {/* Tic Tac Toe */}
       <TicTacToe />
 
-      {/* Custom UseFetch Hook */}
+      {/* Custom UseFetch Hook
       <UseFetchHookTest />
 
       {/* On Clcik Outside */}
-      <UseOnClickOutsideTest />
+      {/* <UseOnClickOutsideTest /> */}
+
+      {/* Scroll to Bottom and Top */}
+      <ScrollToTopAndBottom />
     </div>
   );
 }
